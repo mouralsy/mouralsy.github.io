@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 115%;
+            color: rgb(253, 236, 0);
+            background-color: rgb(5, 5, 48);
+            margin-left: 1em;
+        }
+        h1{
+            font-size: 2em;
+            background-color: rgb(41, 6, 72)       
+         }
+        h2{
+            color: rgb(220, 217, 39);
+            background-color: rgb(41, 6, 72)
+        }
+
+        .botao{
+            font-size:larger;
+            font-weight: 200;
+            font-family: 'Fantasia' ;
+            border: solid 2px blueviolet;
+            border-radius: 25%;
+            color: rgb(253, 236, 0) ;
+            background-color: rgb(5, 5, 48);
+            transition: 'background-color 0,5s ease', 'color 0,5s ease', 'transform 0,5s ease';
+        }
+
+        .botao:hover{
+            background-color: rgb(33, 33, 121);
+            color: rgb(220, 217, 39) ;
+            transition: 'scale(1.2) ';
+           } 
+
+        .bip{
+            color: rgb(0, 0, 0);
+            background-color: rgb(116, 129, 162);
+            border: 2px blueviolet;
+        }
+
+        input{
+            font-size: 100%;
+        }
+
+        select{
+            font-size: 98%;
+        }
+    </style>
+    <br>
+    <a href="./landingpage.html" target="_self"><button class="botao">Voltar para página principal</button></a>&nbsp; &nbsp;
+    <a href="serviços.html" target="_self"><button class="botao">Serviços</button></a> &nbsp; &nbsp;
+    <a href="githuby.html" target="_self"><button class="botao">Githuby</button></a>&nbsp; &nbsp;
+    <a href="./curriculo.html" target="_self"><button class="botao">Curriculo </button> </a>&nbsp; &nbsp;
+
+    <h2>Realize o formulário para entrarmos em contato:</h3>
+    <form action="processarForm.php" method="post">
+        <label for="nome">Nome:</label>
+        <input class="bip" id="nome" name="nome">
+        <br><br>
+        <label for="email">E-mail:</label>
+        <input class="bip" type="email" id="email" name="email">
+        <br><br>
+        <label for="telefone">Telefone:</label>
+        <input class="bip" type="tel" id="telefone"  name="telefone">
+        <br><br>
+        <input type="checkbox" name="juridica" value="juridica"> Pessoa Jurídica
+        <br>
+        <input type="checkbox" name="fisica" value="fisica"> Pessoa Física
+        <br><br>
+        <p>Opção para melhor horário de contato</p>
+        <input type="checkbox" name="9" value="9"> 09:00  às 10:00
+        <br>
+        <input type="checkbox" name="10" value="10"> 10:00 às 11:00
+        <br>
+        <input type="checkbox" name="11" value="11"> 11:00 às 12:00
+        <br>
+        <input type="checkbox" name="13" value="13"> 13:00 às 14:00
+        <br>
+        <input type="checkbox" name="15" value="15"> 15:00 às 16:00
+        <br><br>
+        <label for="">Serviço desejado:</label>
+        <select class="bip" name="serviços" id="1">
+            <option value="select">Selecione</option>
+            <option value="estática">Página estática</option>
+            <option value="dinâmica">Página dinâmica</option>
+            <option value="manutençaõ">Manutenção de página</option>
+        </select>
+        <br>
+        <br>
+        <label for="numero">Número de páginas:</label>
+        <input class="bip" type="number" name="numero" id="numero" size="3" maxlength="20">
+        <br>
+        <br>
+        
+        <input class="botao" type="reset" value="Limpar">
+        <input class="botao" type="submit" value="Enviar">
+    </form>
+
+        
+
+</body>
+</html>
